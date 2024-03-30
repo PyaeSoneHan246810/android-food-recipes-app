@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SearchMealsFragment">
+
+    <LinearLayout
+        android:id="@+id/llSearchBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etSearchQueryInput"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_box"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/my_font"
+            android:hint="@string/search_meal"
+            android:textSize="@dimen/_12ssp"
+            android:textColorHint="@color/off_black"
+            android:textColor="@color/off_black"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+        <ImageView
+            android:id="@+id/ivArrowLeft"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_arrow_forward"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/arrow_forward_icon"
+            app:tint="@color/primary"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchedMeals"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/llSearchBox"
+        app:layout_constraintStart_toStartOf="@+id/llSearchBox"
+        app:layout_constraintTop_toBottomOf="@+id/llSearchBox" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

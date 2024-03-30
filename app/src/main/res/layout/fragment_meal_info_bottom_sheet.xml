@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_meal_info_bottom_sheet"
+    tools:context=".fragments.bottomSheet.MealInfoBottomSheetFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvBottomSheetMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:strokeWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/ivBottomSheetMeal"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/img_meal_placeholder"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/meal_image"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/llBottomSheetMealInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cvBottomSheetMeal"
+        app:layout_constraintTop_toTopOf="@+id/cvBottomSheetMeal">
+        <TextView
+            android:id="@+id/tvBottomSheetMealArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/my_font"
+            android:text="@string/area"
+            android:textColor="@color/orange_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_9sdp"
+            app:drawableLeftCompat="@drawable/ic_area"
+            app:drawableTint="@color/accent" />
+
+        <TextView
+            android:id="@+id/tvBottomSheetMealCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/my_font"
+            android:text="@string/category"
+            android:textColor="@color/orange_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_9sdp"
+            app:drawableLeftCompat="@drawable/ic_category"
+            app:drawableTint="@color/accent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBottomSheetMealName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/my_font"
+        android:text="@string/meal_name"
+        android:textColor="@color/orange_black"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/llBottomSheetMealInfo"
+        app:layout_constraintTop_toBottomOf="@+id/llBottomSheetMealInfo" />
+
+    <TextView
+        android:id="@+id/tvBottomSheetReadMore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/read_more"
+        android:textColor="@color/orange_black"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvBottomSheetMealName"
+        app:layout_constraintStart_toStartOf="@+id/tvBottomSheetMealName"
+        app:layout_constraintTop_toBottomOf="@+id/tvBottomSheetMealName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

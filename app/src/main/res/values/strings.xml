@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Let Me Cook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="home">Home</string>
+    <string name="what_would_you_like_to_eat">What would you like to eat?</string>
+    <string name="random_meal_image">Random Meal Image</string>
+    <string name="over_popular_meals">Over popular meals</string>
+    <string name="categories">Categories</string>
+    <string name="meal_image">Meal Image</string>
+    <string name="floating_action_button">Floating Action Button</string>
+    <string name="category">Category</string>
+    <string name="area">Area</string>
+    <string name="instructions">Instructions</string>
+    <string name="youtube_icon_image">Youtube Icon Image</string>
+    <string name="category_image">Category Image</string>
+    <string name="meal_name">Meal Name</string>
+    <string name="read_more">Read more....</string>
+    <string name="search_meal">Search meals</string>
+    <string name="arrow_forward_icon">Arrow Forward Icon</string>
+    <string name="empty_favorite_meals_image">Empty Favorite Meals Image</string>
+    <string name="empty_favorite_meals">Empty Favorite Meals</string>
+</resources>
